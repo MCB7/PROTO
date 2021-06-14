@@ -6,7 +6,7 @@ const Candidate = require("../models/candidateModel");
 
 router.route("/create").post((req,res) => {
     const name = req.body.name;
-    const bio = req.body.content;
+    const bio = req.body.bio;
     const newCandidate = new Candidate({
         name,
         bio

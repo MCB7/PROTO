@@ -8,13 +8,14 @@ function CreateCandidate() {
     })
 
 function handleChange(event) {
-    const {name, value} = event.target;
+    const {name, bio, value} = event.target;
 
 
     setInput(prevInput => {
         return {
             ...prevInput,
-            [name]: value
+            [name]: value,
+            [bio]: value
         }
     })
 }
