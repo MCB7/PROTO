@@ -2,8 +2,31 @@ import React, {useEffect, useState} from "react";
 
 function Candidates() {
     const [candidates, setCandidates] = useState([{
+        type: '',
+        active:'',
         name: '',
-        bio: ''
+        bio: '',
+        policy1:'',
+        policy1detail:'',
+        policy2:'',
+        policy2detail:'',
+        policy3:'',
+        policy3detail:'',
+        policy4:'',
+        policy4detail:'',
+        policy5:'',
+        policy5detail:'',
+        policy6:'',
+        policy6detail:'',
+        policy7:'',
+        policy7detail:'',
+        policy8:'',
+        policy8detail:'',
+        policy9:'',
+        policy9detail:'',
+        policy10:'',
+        policy10detail:''
+
     }])
     
     useEffect(() => {

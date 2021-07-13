@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
 
 const candidateSchema = {
+    type: String,
+    active: String,
     name: String,
     bio: String,
     policy1: String,
@@ -125,6 +127,6 @@ const candidateSchema = {
     policy10detail10: String,
 }
 
-const Candidate = mongoose.model("Candidate", candidateSchema);
+const Candidate = mongoose.model("Seattle", candidateSchema, "seattle" );
 
 module.exports = Candidate;
